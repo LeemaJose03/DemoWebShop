@@ -29,6 +29,7 @@ public class TC001_RegisterTest extends ProjectSpecification{
 		.confirmPass(conPassword)
 		.regButtonClick();
 		
+		
 	}
 	
 }

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-09T12:37:27 IST" name="Suite" finished-at="2023-11-09T12:37:53 IST" duration-ms="26812">
+  <suite started-at="2023-11-22T20:59:35 IST" name="Suite" finished-at="2023-11-22T20:59:56 IST" duration-ms="20689">
     <groups>
     </groups>
-    <test started-at="2023-11-09T12:37:27 IST" name="Test" finished-at="2023-11-09T12:37:53 IST" duration-ms="26812">
+    <test started-at="2023-11-22T20:59:35 IST" name="Test" finished-at="2023-11-22T20:59:56 IST" duration-ms="20689">
       <class name="testcase.TC001_RegisterTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.TC001_RegisterTest@78fa769e]" started-at="2023-11-09T12:37:27 IST" name="setup" finished-at="2023-11-09T12:37:27 IST" duration-ms="42" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.TC001_RegisterTest@16612a51]" started-at="2023-11-22T20:59:36 IST" name="setup" finished-at="2023-11-22T20:59:36 IST" duration-ms="56" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:testcase.TC001_RegisterTest@78fa769e]" started-at="2023-11-09T12:37:30 IST" name="browserLaunch" finished-at="2023-11-09T12:37:47 IST" duration-ms="17501" status="PASS">
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:testcase.TC001_RegisterTest@16612a51]" started-at="2023-11-22T20:59:39 IST" name="browserLaunch" finished-at="2023-11-22T20:59:51 IST" duration-ms="12843" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[headless]]>
               </value>
             </param>
             <param index="1">
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcase.TC001_RegisterTest@78fa769e]" started-at="2023-11-09T12:37:47 IST" name="registerTest" data-provider="getData" finished-at="2023-11-09T12:37:52 IST" duration-ms="5262" status="FAIL">
+        <test-method signature="registerTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcase.TC001_RegisterTest@16612a51]" started-at="2023-11-22T20:59:51 IST" name="registerTest" data-provider="getData" finished-at="2023-11-22T20:59:56 IST" duration-ms="4420" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,49 +55,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [User] but found [User entered]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [User] but found [User entered]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at pages.RegisterPage.regButtonClick(RegisterPage.java:85)
-at testcase.TC001_RegisterTest.registerTest(TC001_RegisterTest.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcase.TC001_RegisterTest@78fa769e]" started-at="2023-11-09T12:37:53 IST" name="closeBrowser" finished-at="2023-11-09T12:37:53 IST" duration-ms="717" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcase.TC001_RegisterTest@16612a51]" started-at="2023-11-22T20:59:56 IST" name="closeBrowser" finished-at="2023-11-22T20:59:56 IST" duration-ms="280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

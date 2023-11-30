@@ -19,6 +19,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class Utilityclass {
 
@@ -32,11 +33,12 @@ public class Utilityclass {
 			  // To launch the browser
 			  
 			  	ChromeOptions options = new ChromeOptions();
-				options.addArguments("--remote-allow-origins=*");
+				//options.addArguments("--remote-allow-origins=*");
+				
 				
 				if(browser.equalsIgnoreCase("chrome")) {
 					
-				driver = new ChromeDriver(options);
+				driver = new ChromeDriver();
 				
 				} else if (browser.equalsIgnoreCase("edge")) {
 					
@@ -46,9 +48,15 @@ public class Utilityclass {
 					
 					driver= new FirefoxDriver();
 					
+				} else if (browser.equalsIgnoreCase("headless")) {
+					
+					
+					options.addArguments("headless");
+					driver=new ChromeDriver(options);
+					
 				} else {
 					
-					driver = new ChromeDriver(options);
+					driver = new ChromeDriver();
 					
 				}
 				driver.manage().window().maximize();
@@ -103,6 +111,11 @@ public class Utilityclass {
 			FileUtils.copyFile(source, dest);
 			return path;
 			
+		}
+		
+		public void assert_Check(String actual, String exepected) {
+			
+			Assert.assertEquals(actual,exepected);
 		}
 		
 }

@@ -6,7 +6,7 @@
     <listener class-name="utility.Listener"/>
   </listeners>
   <test thread-count="5" parallel="tests" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="headless"/>
     <classes>
       <class name="testcase.TC001_RegisterTest">
         <methods>

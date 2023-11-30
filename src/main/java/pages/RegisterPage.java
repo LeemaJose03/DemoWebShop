@@ -80,8 +80,16 @@ public class RegisterPage extends ProjectSpecification {
 	public RegisterPage regButtonClick() {
 		
 		click(regButton);
+	
 		return this;
 		
+	}
+	
+	public RegisterPage assertion_check() {
+		String expected="Hello";
+		String actual ="Hi";
+		assert_Check(actual,expected);
+		return this;
 	}
 	
 	

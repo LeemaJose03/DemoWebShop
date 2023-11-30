@@ -6,7 +6,7 @@
 </listeners>
 <parameter name="url" value="https://demowebshop.tricentis.com/"></parameter>
   <test thread-count="5" name="Test">
-  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="browser" value="headless"></parameter>
     <classes>
       <class name="testcase.TC001_RegisterTest"/>
     </classes>
